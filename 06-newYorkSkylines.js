@@ -4,10 +4,10 @@ function newYorkSkylines(n, arr) {
   let str = '';
     for(let i=0; i<n; i++){
       if(i==0){
-        if(arr[i]<arr[i+1]) str+=0 + ' ';
+        if(arr[i]<=arr[i+1]) str+=0 + ' ';
         else str+=1 + ' ';
       }else if(i==n-1){
-        if(arr[i-1]>arr[i]) str+=0 + ' ';
+        if(arr[i-1]>=arr[i]) str+=0 + ' ';
         else str+=1 + ' ';
       }else{
         if(arr[i-1]<arr[i] && arr[i]>arr[i+1]) str+=2 + ' ';
