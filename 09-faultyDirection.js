@@ -24,7 +24,7 @@ function takeInput(){
   a.shift();
   for(let i=0; i<a.length; i+=2){
     let n=0; str='';
-    if(i%2==0) n = parseInt(a[i], 10);
+    n = parseInt(a[i], 10);
     str = a[i+1];
     //console.log(str);
     faultyDirection(n, str);
