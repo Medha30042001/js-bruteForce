@@ -1,5 +1,4 @@
 //my approach
-
 function cipherString(n, str) {
   let arr = str.split('');
   let newStr = '', i=0;
@@ -29,9 +28,7 @@ function takeInput(){
   for(let i=0; i<a.length; i+=2){
     let n=0;
     let str = '';
-    if(i%2==0){
       n = parseInt(a[i], 10);
-    }
       str = a[i+1];
       cipherString(n, str);
   }
