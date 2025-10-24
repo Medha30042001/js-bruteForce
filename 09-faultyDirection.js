@@ -23,9 +23,8 @@ function takeInput(){
   const testcases = parseInt(a[0], 10);
   a.shift();
   for(let i=0; i<a.length; i+=2){
-    let n=0; str='';
-    n = parseInt(a[i], 10);
-    str = a[i+1];
+    let n = parseInt(a[i], 10);
+    let str = a[i+1];
     //console.log(str);
     faultyDirection(n, str);
   }
