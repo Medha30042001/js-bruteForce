@@ -1,14 +1,14 @@
 //my approach
 
 function isPalindrome(S){
-  let arr = S.split('');
-  SS = arr.reverse().join('');
-  //console.log(SS);
+  let SS = S.split('').reverse().join('');
+  console.log(SS);
   if(S===SS){
     return true;
   }
   return false;
 }
+//isPalindrome('thisracecarisgood');
 
 function masaiPalSubString(S){
   let max = 0;
@@ -22,3 +22,5 @@ function masaiPalSubString(S){
     }
   console.log(max);
 }
+
+//masaiPalSubString('thisracecarisgood');
